@@ -4,26 +4,38 @@
  */
 package model;
 
+import java.util.ArrayList;
 import javax.swing.ImageIcon;
 
 /**
  *
  * @author 影子
  */
-public class assignment2 {
+public class SupplierDirectory {
     
-private String supplyName;
-    private ProductCatalog productCatalog;
-    private ImageIcon logoImage;
+    private ArrayList<Supplier> supplierList;
     
-    public ImageIcon getLogoImage(){
-        this.logoImage=logoImage;
+    public SupplierDirectory(){
+        supplierList = new ArrayList<Supplier>();
+    
     }
-    
-    public Supplier(){
-        productCatalog =  new ProductCatalog();
+    public ArrayList<Supplier>getSupplierList(){
+        return supplierList;
     }
-    
-    public String getSupplyName(){
-        return supplyName;
+    public Supplier addSupplier(){
+        Supplier s = new Supplier()
+                supplierList.add(s);
+                        return s;
+    }
+    public void removeSupplier(Supplier s){
+        supplierList.remove(s);
+    }
+    public Supplier searchSupplier(String keyWord){
+        for(Supplier s : supplierList){
+            if(keyWord.equals(s.getSupplyName())){
+                return s;
+            }
+        }
+        return null;
+    }
 }

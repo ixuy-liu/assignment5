@@ -14,3 +14,11 @@ body {
 .btn-primary:hover {
     background-color: #e64d26;
 }
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar .btn-light {
+    border-radius: 20px;
+}

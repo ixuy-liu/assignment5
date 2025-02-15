@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // If all inputs are valid, redirect to the home page
         if (isValid) {
             alert("Login Successful! Redirecting...");
-            window.location.href = "index.html"; // Redirect to home page
+            window.location.href = "home.html"; // Redirect to home page
         }
     });
 });

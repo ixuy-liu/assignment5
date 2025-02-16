@@ -56,22 +56,74 @@
         </div>
     </nav>
 
-  <!-- Hero Section -->
-  <section class="hero text-white text-center py-5" 
-    style="background-image: url('assets/pic1.jpg'); background-size: cover; background-position: center;">
-    <div class="container">
-      <h1 class="display-4 fw-bold">🔥 Hot & Fresh Pizza Delivered Fast! 🍕</h1>
-      <p class="lead mb-4">Order your favorite pizza today and enjoy a mouthwatering experience.</p>
-      <a href="menu.html" class="btn btn-light btn-lg">Order Now</a>
+
+  <!-- Hero Section with Bootstrap Carousel -->
+<section id="hero">
+    <div id="pizzaCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#pizzaCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#pizzaCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#pizzaCarousel" data-bs-slide-to="2"></button>
+      </div>
+  
+      <!-- Carousel Images -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/pic1.jpg" class="d-block w-100" alt="Delicious Pizza">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-4 fw-bold">🔥 Hot & Fresh Pizza Delivered Fast! 🍕</h1>
+            <p class="lead">Order your favorite pizza today and enjoy a mouthwatering experience.</p>
+            <a href="menu.html" class="btn btn-light btn-lg">Order Now</a>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img src="assets/pic2.jpg" class="d-block w-100" alt="Cheese Pizza">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-4 fw-bold">🧀 Melting Cheese, Ultimate Flavor!</h1>
+            <p class="lead">Try our special cheese burst pizza today.</p>
+            <a href="menu.html" class="btn btn-light btn-lg">Order Now</a>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img src="assets/pic3.jpg" class="d-block w-100" alt="Veggie Pizza">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-4 fw-bold">🌱 Fresh Ingredients, Authentic Taste!</h1>
+            <p class="lead">Taste the best veggie pizza with hand-picked toppings.</p>
+            <a href="menu.html" class="btn btn-light btn-lg">Order Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+  
     </div>
   </section>
+  
 
 
   <!-- Sale Section: -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Sale!</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <section class="py-5 bg-light">
+            <div class="container">
+                <!-- Decorative Title with Divider -->
+                <div class="text-center mb-4">
+                    <hr class="w-25 mx-auto border-danger opacity-75">
+                    <h2 class="fw-bold text-danger">🔥 Limited Time Sale! 🔥</h2>
+                    <hr class="w-25 mx-auto border-danger opacity-75">
+                </div>
+
+        <!-- Sale Cards -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
         <!-- Card 1: pic2 -->
         <div class="col">
           <div class="card position-relative h-100 shadow">

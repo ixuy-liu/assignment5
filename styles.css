@@ -22,3 +22,29 @@ body {
 .navbar .btn-light {
     border-radius: 20px;
 }
+.hero {
+    position: relative;
+    color: #fff;
+    height: 70vh; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero .lead {
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+

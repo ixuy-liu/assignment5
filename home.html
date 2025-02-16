@@ -10,33 +10,51 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand" href="home.html">🍕 Pizza Order Express</a>
-      <!-- Mobile Menu Toggle -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Navbar Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Cart 🛒</a>
-          </li>
-        </ul>
-        <!-- Login / Profile Button -->
-        <a href="login.html" class="btn btn-light ms-3">👤 Login</a>
-      </div>
-    </div>
-  </nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="home.html">🍕 Pizza Order Express</a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                   <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="featuredDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="featuredDropdown">
+                            <li><a class="dropdown-item" href="#"><img src="pepperoni.jpg" alt="Pepperoni Pizza" width="20"> Pepperoni Pizza</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="margherita.jpg" alt="Margherita Pizza" width="20"> Margherita Pizza</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="hawaiian.jpg" alt="Hawaiian Pizza" width="20"> Hawaiian Pizza (With Pineapple)</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="bbqchicken.jpg" alt="BBQ Chicken Pizza" width="20"> BBQ Chicken Pizza</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="neapolitan.jpg" alt="Neapolitan Pizza" width="20">Neapolitan Pizza</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="chicago.jpg" alt="Chicago Pizza" width="20">Chicago Pizza</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="detroit.jpg" alt="Detroit Style Pizza" width="20">Detroit Style Pizza</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="sicillian.jpg" alt="Sicilian Pizza" width="20">Sicilian Pizza</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="nyc.jpg" alt="New York Style Pizza" width="20">New York Style Pizza</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="greek.jpg" alt="Greek Pizza" width="20">Greek Pizza</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart 🛒</a>
+                    </li>
+                </ul>
+
+                <!-- Login / Profile Button -->
+                <a href="login.html" class="btn btn-light ms-3">👤 Login</a>
+            </div>
+        </div>
+    </nav>
 
   <!-- Hero Section -->
   <section class="hero text-white text-center py-5" 
